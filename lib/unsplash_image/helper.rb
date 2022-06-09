@@ -10,7 +10,5 @@ module UnsplashImage
 
       options.join("/")
     end
-
   end
 end
-
