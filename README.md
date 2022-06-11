@@ -10,11 +10,11 @@ This is the easiest way to fill your Rails app with real photos.
 
 1. as Rails helper to generate dummy images:
 ```ruby
-   <%= image_tag unsplash_image_url(size: '300x200', tags: 'cat, dog') %>
+<%= image_tag unsplash_image_url(size: '300x200', tags: 'cat, dog') %>
 
-   <%= image_tag unsplash_image_url(size: '800x600', tags: 'building') %>
+<%= image_tag unsplash_image_url(size: '800x600', tags: 'building') %>
 
-   <%= image_tag unsplash_image_url(tags: 'nature') %> 
+<%= image_tag unsplash_image_url(tags: 'nature') %> 
 ```
 
 2. as a tool to download images from Unsplash.com and use them for your seeds or specs.
@@ -26,7 +26,7 @@ unsplash_image download --path images/cats --tags cat -n 20
 3. If you need to have a `File` object with a random image.
 
 ```ruby
- file = UnsplashImage.tempfile(size: '500x500', tags: 'cat')
+file = UnsplashImage.tempfile(size: '500x500', tags: 'cat')
 ```
 
 ### CLI
@@ -49,14 +49,14 @@ You can get random image url inside your views using `unsplash_image_url`.
 
 Example:
 ```erb
- <%= image_tag unsplash_image_url(size: '300x200', tags: 'cat, dog') %>
+<%= image_tag unsplash_image_url(size: '300x200', tags: 'cat, dog') %>
 ```
 
 Also you can get it as a file with `UnsplashImage.tempfile`.
 
 Example:
 ```ruby
- file = UnsplashImage.tempfile(size: '500x500', tags: 'cat')
+file = UnsplashImage.tempfile(size: '500x500', tags: 'cat')
 ```
 
 ## Installation
