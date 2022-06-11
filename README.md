@@ -1,25 +1,47 @@
-# Unsplash Image
+# Unsplash Image Downloader & Helpers
 
 [![RailsJazz](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/my_other.svg?raw=true)](https://www.railsjazz.com)
 
-A CLI and a set of helpers to get free images from [Unsplash](https://unsplash.com/).
+A CLI and a set of Rails helpers to get free images from [Unsplash](https://unsplash.com/).
 
+This is the easiest way to fill your Rails app with real photos.
 
 ## Usage
 
+1. as Rails helper to generate dummy images:
+```ruby
+   <%= image_tag unsplash_image_url(size: '300x200', tags: 'cat, dog') %>
+
+   <%= image_tag unsplash_image_url(size: '800x600', tags: 'building') %>
+
+   <%= image_tag unsplash_image_url(tags: 'nature') %> 
+```
+
+2. as a tool to download images from Unsplash.com and use them for your seeds or specs.
+
+```bash
+unsplash_image download --path images/cats --tags cat -n 20 
+```
+
+3. If you need to have a `File` object with a random image.
+
+```ruby
+ file = UnsplashImage.tempfile(size: '500x500', tags: 'cat')
+```
+
 ### CLI
 
+By default `unsplash_image download  --path ./files` will download 10 random images into a `./files` folder.
+
 You can see list of all available options by running:
+
 
 ```bash
 unsplash_image --help download
 ```
 
-Example:
+With additional options you can specify a destination folder, tags, resolution of the images.
 
-```bash
-unsplash_image download --path images/cats --tags cat -n 20 
-```
 
 ### In your Rails app
 

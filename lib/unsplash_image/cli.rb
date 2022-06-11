@@ -23,7 +23,9 @@ module UnsplashImage
           "UnsplashImage #{UnsplashImage::VERSION}",
           "",
           "Usage example: ",
+          "    unsplash_image download --path spec/files -n 10",
           "    unsplash_image download --path images/cats -s 400x400 --tags cat -n 20",
+          "    unsplash_image download --path files/ -s 300x300 --tags=\"cat,dogs,birds\" -n 20",
           "",
           "run 'unsplash_image download' to see awailable options"
         ]
@@ -41,10 +43,10 @@ module UnsplashImage
       > $ unsplash_image download --path images/cats -s 400x400 --tags cat -n 20
     LONGDESC
 
-    DEFAULT_COUNT = 1
+    DEFAULT_COUNT = 10
     DEFAULT_PATH = "."
 
-    method_option :size, type: :string, aliases: [:s], banner: "Specify image size. Example: -s 500x500"
+    method_option :size, type: :string, aliases: [:s], banner: "Specify image size. Example: -s 640x480"
     method_option :count, type: :numeric, aliases: [:n], banner: "Specify images count. Example: -n 10"
     method_option :path, type: :string, banner: "Specify folder. Example: --path images/cats"
     method_option :tags, type: :array, aliases: [:t], banner: "Specify tags. Example: -t cats"
