@@ -1,0 +1,7 @@
+require: standard
+
+inherit_gem:
+  standard: config/base.yml
+
+Layout/ExtraSpacing:
+  Enabled: false
