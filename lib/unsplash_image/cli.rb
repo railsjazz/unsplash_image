@@ -25,7 +25,7 @@ module UnsplashImage
           "Usage example: ",
           "    unsplash_image download --path spec/files -n 10",
           "    unsplash_image download --path images/cats -s 400x400 --tags cat -n 20",
-          "    unsplash_image download --path files/ -s 300x300 --tags=\"cat,dogs,birds\" -n 20",
+          "    unsplash_image download --path files/ -s 300x300 --tags cat dogs birds -n 20",
           "",
           "run 'unsplash_image download' to see awailable options"
         ]
