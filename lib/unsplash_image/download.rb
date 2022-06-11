@@ -3,7 +3,7 @@ require "tempfile"
 
 module UnsplashImage
   module Download
-    def tempfile(size:, filename: "image.png", tags: nil)
+    def tempfile(size: nil, filename: "image.jpeg", tags: nil)
       file = Tempfile.new(filename)
       begin
         file.write(URI.parse(UnsplashImage::Helper.unsplash_image_url(size: size, tags: tags)).read)
