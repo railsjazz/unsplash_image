@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'unsplash_image/cli'
+
+UnsplashImage::CLI.start

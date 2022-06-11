@@ -3,6 +3,7 @@ PATH
   specs:
     unsplash_image (0.1.0)
       rails
+      thor (>= 0.20)
 
 GEM
   remote: https://rubygems.org/

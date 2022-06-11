@@ -14,7 +14,10 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
+  spec.executables << "unsplash_image"
+
   spec.add_dependency "rails"
+  spec.add_dependency "thor", ">= 0.20"
 
   spec.add_development_dependency "faker"
   spec.add_development_dependency "pry"

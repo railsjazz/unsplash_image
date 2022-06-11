@@ -1,4 +1,3 @@
-fix: true
 ignore:
   - '**/**':
     - Layout/ExtraSpacing
