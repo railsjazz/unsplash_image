@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
 
   spec.executables << "unsplash_image"
 
-  spec.add_dependency "rails"
   spec.add_dependency "thor", ">= 0.20"
 
+  spec.add_development_dependency "rails"
   spec.add_development_dependency "faker"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "puma"
