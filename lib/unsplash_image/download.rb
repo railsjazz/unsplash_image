@@ -6,6 +6,7 @@ module UnsplashImage
     def tempfile(size: nil, filename: "image.jpeg", tags: nil)
       file = Tempfile.new(filename)
       begin
+        file.binmode
         file.write(URI.parse(UnsplashImage::Helper.unsplash_image_url(size: size, tags: tags)).read)
         file.rewind
         if block_given?

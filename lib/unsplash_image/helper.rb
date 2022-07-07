@@ -4,10 +4,10 @@ module UnsplashImage
 
     BASE = "https://source.unsplash.com/random".freeze
 
-    def unsplash_image_url(size:, tags: nil)
+    def unsplash_image_url(size: nil, tags: nil)
       options = [BASE]
 
-      options << size
+      options << size if size
       options << "?#{tags}" if tags
 
       options.join("/")
