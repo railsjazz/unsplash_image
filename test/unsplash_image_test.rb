@@ -13,7 +13,8 @@ class UnsplashImageTest < ActiveSupport::TestCase
 
   test "helper" do
     assert_nothing_raised do
-      UnsplashImage::Helper.unsplash_image_url(size: '500x500')
+      UnsplashImage::Helper.unsplash_image_url
+      UnsplashImage::Helper.unsplash_image_url(size: "500x500")
     end
   end
 end
