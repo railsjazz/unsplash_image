@@ -14,13 +14,13 @@ This is the easiest way to fill your Rails app with real photos.
 
 <%= image_tag unsplash_image_url(size: '800x600', tags: 'building') %>
 
-<%= image_tag unsplash_image_url(tags: 'nature') %> 
+<%= image_tag unsplash_image_url(tags: 'nature') %>
 ```
 
 2. as a tool to download images from Unsplash.com and use them for your seeds or specs.
 
 ```bash
-unsplash_image download --path images/cats --tags cat -n 20 
+unsplash_image download --path images/cats --tags cat -n 20
 ```
 
 3. If you need to have a `File` object with a random image.
@@ -77,6 +77,10 @@ To use CLI anywhere in the system you can install gem globally:
 ```bash
 gem install unsplash_image
 ```
+
+## Unit Tests
+
+We have simple tests, just run: `ruby test/unsplash_image_test.rb`.
 
 ## Contributing
 
