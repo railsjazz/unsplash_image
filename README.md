@@ -1,6 +1,7 @@
 # Unsplash Image Downloader & Helpers
 
 [![RailsJazz](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/my_other.svg?raw=true)](https://www.railsjazz.com)
+[![Listed on OpenSource-Heroes.com](https://opensource-heroes.com/badge-v1.svg)](https://opensource-heroes.com/r/railsjazz/unsplash_image)
 
 A CLI and a set of Rails helpers to get free images from [Unsplash](https://unsplash.com/).
 
