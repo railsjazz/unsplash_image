@@ -87,6 +87,9 @@ We have simple tests, just run: `ruby test/unsplash_image_test.rb`.
 
 You are welcome to contribute. See list of `TODO's` below.
 
+[<img src="https://opensource-heroes.com/svg/embed/railsjazz/unsplash_image"
+/>](https://opensource-heroes.com/r/railsjazz/unsplash_image)
+
 ## TODO
 
 - allow caching downloaded files for performance improvement (eg using in factories)
